@@ -11,9 +11,6 @@
 <script>
     let relocate = document.getElementById('relocate')
     relocate.addEventListener('click',()=>{
-        navigator.userAgent.includes("iPhone") ? 
-        (window.location.href="sbolonline://payments?p2p-by-phone-number",setTimeout((()=>window.location.href="sberbankonline://payments/p2p-by-phone-number/+79284830355"),100))
-        :
         window.location.href="sberbankonline://messenger/dialog-for-phone?phone=+79889368516&tab=payments"
     })
 </script>
